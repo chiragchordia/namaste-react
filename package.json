@@ -1,0 +1,31 @@
+{
+  "name": "nameste-react",
+  "version": "1.0.0",
+  "description": "This is Nameste React",
+  "keywords": [
+    "react"
+  ],
+  "homepage": "https://github.com/chiragchordia/namaste-react#readme",
+  "bugs": {
+    "url": "https://github.com/chiragchordia/namaste-react/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chiragchordia/namaste-react.git"
+  },
+  "license": "ISC",
+  "author": "chirag",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  }
+}
