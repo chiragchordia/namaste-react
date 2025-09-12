@@ -67,10 +67,42 @@ Answer - yes
 
 - keep track of state variable - whenver state variable change - find out the diff between two virtual dom and update the UI
 
+Q. what is virtual DOM
+A. Its a object representaion of the jsx (actual DOM)
+
 question - why react fast?
 answer
 
 - its has virtual DOM
+- efficient rendering
+- efficeint dom manipulation
 - Is has a diff algorithem which is very efficient
 - it can do efficient DOM manipulation
 - if find out the diff and update the UI
+
+useEffect(callback function, dependecy array) - useEffect(() => {}, [])
+
+- after component render it will call the callback function
+- as soon as render cycle finish useEffect will call
+- if you have do something after renderin the component you have to write inside the useEffect()
+- if no dependecy array => useEffect is called on every render
+- if dependecy array => useEffect is call on initial render(just once)
+- if deoendecy array is [btnNameReact] => called everytime btnNameReact is updated
+
+useState(default value) - useState("")
+
+- if you want dynamic component
+- if you want something change in component then we use local state variable
+- whenever state variable change, react re-render the component.
+- can't called the useState() outside the component, only be called inside the component
+- don't create useState() hooks inside the if/else condition, forloop, function - its does not make sense
+
+CORS Policy
+
+- browser blocking the call from one origin to another origin
+- when origin are mismatch CORS error will come
+
+Shimmer UI
+
+- untill data load showing the fake page
+- load the fake page untill we get the actual data.
